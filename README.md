@@ -6,7 +6,7 @@ how to install Max Blog:
 
 1. clone application repository 
 ```bash
-git clone 
+git clone https://github.com/00010492/WT.blog.git
 ```
 
 2. Install dependencies
@@ -27,10 +27,10 @@ node app.js
 
 
 ### Max Blog application repository
-[LINK to github repo]
+[LINK to github repo](https://github.com/00010492/WT.blog)
 
 ### Link to the running application on glitch 
-[LINK to Angel Blog]
+
 
 
    
