@@ -1,5 +1,5 @@
 {
-  "name": "WT-blog",
+  "name": "WTblog",
   "version": "1.0.0",
   "description": "###  with this blog website you can create, read and delete blogs.",
   "main": "app.js",

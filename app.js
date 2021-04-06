@@ -98,7 +98,7 @@ app.post("/new-blog", (req, response) => {
 app.listen(3000, err => {
     if (err) console.log(err);
 
-    console.log("server is running on port 3000...");
+    console.log("server is listening to port 3000...");
 })
 
 

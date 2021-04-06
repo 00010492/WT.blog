@@ -27,9 +27,10 @@ node app.js
 
 
 ### Max Blog application repository
-[LINK to github repo](https://github.com/00010492/WT.blog)
+[link to github repo](https://github.com/00010492/WT.blog)
 
 ### Link to the running application on glitch 
+[link to app](https://bejewled-grove-salary.glitch.me/)
 
 
 
