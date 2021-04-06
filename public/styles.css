@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 20px 25px;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-family: "Century Gothic";
+    color: #fff;
+    font-size: 30px;
+    list-style: none;
+}
+.nav a {
+    text-decoration: none;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{ margin-left: 30px;}
+
+.nav-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 20px;
+    font-family: Verdana;
+    font-size: 12px;
+    color: white;
+}
+
+#hamburger-toggle{ display: none; }
+
+.hamburger{
+    width: 30px; height: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+}
+
+.hamburger .bar{
+    display: inline-block;
+    width: 30px; height: 2px ;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.hamburger .bar::before, .hamburger .bar::after{
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+
+.hamburger .bar::before{ transform: translateY(-10px); }
+
+.hamburger .bar::after{ transform: translateY(10px); }
+
+@media (max-width:600px){
+
+    .nav-list{
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background-color: #9e00ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
+    }
+
+    .nav-list li{ margin: 10px 0; }
+
+.nav-list li a{
+      display: inline-block;
+      font-size: 20px;
+      padding: 15px 20px;
+      transition: all 0.3s;
+}
+
+.nav-list li a:hover{
+      background-color: #fff;
+      color: white;
+      transform: translateY(-10px);
+}
+
+.hamburger{
+      display: flex;
+      z-index: 999;
+}
+
+#hamburger-toggle:checked ~ .nav-list{ transform: none; }
+
+#hamburger-toggle:checked ~ .hamburger .bar::before{ transform: rotate(45deg); }
+
+#hamburger-toggle:checked ~ .hamburger .bar{ background-color: transparent; }
+
+#hamburger-toggle:checked ~ .hamburger .bar::after{ transform: rotate(-45deg); }
+
+}  
+
+.button-wrapper {
+    display: block;
+    text-align: left;
+    padding-top: 50px;
+  }
+
+.button {
+    border: none;
+    border-radius: 3em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    width: auto;
+  }
+
+  .cta-button {
+    background-color: #000;
+    color: #fff !important;
+  }
+  
+  .cta-button:hover {
+    background-color: #777;
+  }
+
+.main-con {
+    padding: 100px;
+
+}
+.main-con h1 {
+    font-size: 50px;
+}
+
+.info-msg {
+    padding-top: 100px;
+}
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 70%;
+  width: 100%;
+  margin: 0 auto;
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+.container-new h1 {
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-bottom: 25px;
+    font-size: 40px;
+}
+
+.success, .error {
+    font-size: 20px;
+}
+
+
+#all-blogs {
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.blog-wrapper {
+    max-width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-title {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.blog-title:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.read-btn {
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 2px;
+    color: white;
+}
+
+.main-in {
+    font-size: 40px;
+    padding-bottom: 50px;
+}
+
+.detail-title {
+    font-size: 35px;
+    padding: 50px;
+    color: black;
+}
+
+.detail-body {
+    font-size: 25px;
+    padding: 10px 70px;
+    color: black;
+    max-width: 70%;
+    line-height: 35px;
+    margin-bottom: 50px;
+}

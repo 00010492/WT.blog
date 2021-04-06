@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block content 
+    #all-blogs 
+        h1.main-in Blogs List
+        each blog in blogs 
+            .blog-wrapper 
+                .blog-t
+                    a.blog-title(href=`/blogs/${blog.id}`)= blog.title
+                .buttons
+                    a.read-btn(href=`/blogs/${blog.id}`) Read
+        
+
+

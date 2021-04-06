@@ -1,0 +1,27 @@
+extends layout.pug 
+
+block content 
+    .container-new
+        h1 Here you can write your blog
+
+
+        if (success) 
+            p.success Check your blog in Blogs List
+
+        if (error)
+            p.error Something is wrong! Try again
+
+
+        .container
+            form#contact(action='/new-blog' method='POST')
+                h3 Let your ideas flow!
+                fieldset
+                    input(name="title" placeholder="Blog's Title" type='text' tabindex='1' required='' autofocus='')
+                fieldset
+                    textarea( name="blogText" placeholder='Type your blog here....' tabindex='5' required='')
+                fieldset
+                    button#contact-submit(name='submit' type='submit' data-submit='...Sending') Publish Blog
+
+
+
+

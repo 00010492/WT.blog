@@ -1,0 +1,19 @@
+
+html(lang="en")
+    head
+        title Max Blog
+        link(rel="stylesheet", href="/static/styles.css")
+       
+    body 
+        nav
+            a.logo(href="/") Max Blog 
+            input#hamburger-toggle(type='checkbox')        
+            label.hamburger(for='hamburger-toggle')        
+                span.bar 
+            ul.nav-list
+                li
+                    a(href='new-blog') Create Blog
+                li
+                    a(href='/blogs') Blogs List
+
+        block content
